@@ -14,6 +14,8 @@
     <script type="text/javascript" src="js/main.js"></script>
 ```
 
+![Alt text](https://i.loli.net/2018/11/21/5bf4e2099d1e5.png "Optional title")
+
 <br>
 
 > async：在html中遇到<script>时，异步加载js，html的解析与渲染没有阻塞，js加载完成之后，停止html的解析与渲染，执行js代码，完成之后再进行html的解析与渲染
@@ -22,17 +24,17 @@
     <script type="text/javascript" src="js/main.js" async></script>
 ```
 
+![Alt text](https://i.loli.net/2018/11/21/5bf4e33ba5320.png "Optional title")
+
 <br>
 
-> defer：在html中遇到<script>时，异步加载js，html的解析与渲染没有阻塞，js加载完成之后，等待html解析与渲染结束之后，再执行js代码
+> defer：在html中遇到<script>时，异步加载js，html的解析与渲染没有阻塞，js加载完成之后，等待浏览器遇到<\/html>标签之后，再执行js代码
 
 ```html
     <script type="text/javascript" src="js/main.js" defer></script>
 ```
 
-***对比详情见下面流程图***
-
-![Alt text](https://i.loli.net/2018/10/15/5bc47f00095af.jpeg "Optional title")
+![Alt text](https://i.loli.net/2018/11/21/5bf4e3ef30957.png "Optional title")
 
 <br>
 
