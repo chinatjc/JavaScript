@@ -8,8 +8,9 @@
 
 #### <script> 元素的加载顺序
 
-一般的加载方式：在html中遇到\<script\>，
+##### 一般的加载方式：在html中遇到\<script\>，
 
+* 依照 script 在代码中的先后顺序，依次加载、执行、加载 ......；
 * 加载script代码时，停止html的解析与渲染（css动画渲染、图片下载与渲染等不受影响）；
 * 执行script代码时，停止页面的所有执行行为，页面短暂卡死；
 
@@ -23,8 +24,9 @@
 
 <br>
 
-async：在html中遇到\<script\>，
+##### async：在html中遇到\<script\>，
 
+* 执行无顺序可言，先加载完先执行；
 * 加载script代码时，页面不受任何影响；
 * 执行script代码时，停止页面的所有执行行为，页面短暂卡死；
 
@@ -38,8 +40,9 @@ async：在html中遇到\<script\>，
 
 <br>
 
-defer：在html中遇到\<script\>，
+##### defer：在html中遇到\<script\>，
 
+* 执行依照 script 在代码中的先后顺序，依次执行；
 * 加载script代码时，页面不受任何影响；
 * 执行script代码时，是在html渲染完毕之后，DOMContentLoaded事件触发之前，停止页面的所有执行行为，页面短暂卡死；
 
