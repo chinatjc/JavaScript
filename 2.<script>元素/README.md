@@ -20,7 +20,7 @@
     <script type="text/javascript" src="js/main.js"></script>
 ```
 
-![Alt text](https://i.loli.net/2018/11/21/5bf4e2099d1e5.png "Optional title")
+![Alt text](./base.png "Optional title")
 
 <br>
 
@@ -36,7 +36,7 @@
     <script type="text/javascript" src="js/main.js" async></script>
 ```
 
-![Alt text](https://i.loli.net/2018/11/21/5bf4e33ba5320.png "Optional title")
+![Alt text](./async.png "Optional title")
 
 <br>
 
@@ -50,7 +50,7 @@
     <script type="text/javascript" src="js/main.js" defer></script>
 ```
 
-![Alt text](https://i.loli.net/2018/11/21/5bf4e3ef30957.png "Optional title")
+![Alt text](./defer.png "Optional title")
 
 <br>
 
