@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<script>
+
+		function getQueryStringArgs() {
+			var reg = '[?&]([^=&]+)=([^&=]*)';
+			var flags = 'g';
+
+			return location.search.match(new RegExp(reg, flags))
+				.reduce(function(map, queryStr) {
+					var mateList = queryStr.match(new RegExp(reg));
+					var key = decodeURIComponent(mateList[1]);
+					var value = decodeURIComponent(mateList[2]);
+
+					map[key] = value;
+
+					return map;
+				}, {});
+		}
+
+	</script>
+</body>
+</html>

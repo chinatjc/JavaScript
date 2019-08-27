@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		[name=frame] {
+			width: 1000px;
+			height: 300px;
+			border: none;
+		}
+
+	</style>
+</head>
+<body>
+	<iframe src="./test.html" name="frame"></iframe>
+	<script>
+
+		// iframe不支持跨域访问
+
+		const frame = document.querySelector('[name=frame]');
+
+		frame.contentWindow; // 通过此属性可以访问iframe的内部window
+
+	</script>
+</body>
+</html>
